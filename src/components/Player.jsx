@@ -1,11 +1,9 @@
 export function Player(props) {
     return (
         <>
-            <h1>Top 10 Jogadores de Futebol</h1>
-
             <div className="player">
                 <h2>{props.player.name}</h2>
-                <img src={props.player.image} alt="Cristiano Ronaldo" />
+                <img src={props.player.image} />
                 <p>Nascimento: {props.player.birth}</p>
                 <p>Idade: {props.player.age} anos</p>
                 <p>Altura: {props.player.height} metros</p>
