@@ -1,3 +1,5 @@
+import '../styles/player.css'
+
 export function Player(props) {
     return (
         <>
