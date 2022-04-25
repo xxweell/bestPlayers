@@ -1,8 +1,7 @@
-import { useState } from "react";
-import { Button } from "./components/Button";
 import { Player } from "./components/Player";
 
 import './styles/global.css'
+import './styles/App.css'
 
 const Players = [
   {
@@ -120,12 +119,14 @@ const Players = [
 
 export function App() {
   return (
-    <div className="App">
+    <>
       <h1>TOP 10 JOGADORES DE FUTEBOL</h1>
 
-        {Players.map(player => (
-          <Player player={player} />
-        ))} 
-    </div>
+      <div className="App">
+          {Players.map(player => (
+            <Player player={player} />
+          ))} 
+      </div>
+    </>
   );
 }
